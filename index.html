@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Menu with Modals</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   
+    <div class="container-fluid">
+        <div class="row d-flex flex-wrap align-items-center  bg-primary p-3">
+            
+            <nav class="navbar navbar-expand-sm ">
+
+                <div class="col-lg-3 col-md-5 col-sm-12 navbar-brand">
+                    <img src="assets/img/logojp.webp" alt="">
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+        
+                <div class="col-lg-4 col-md-7 col-sm-12">
+                    <div class=" collapse navbar-collapse" id="navbarSupportedContent" >
+                        <ul class="navbar-nav  justify-content-center pt-2 customp m-auto ">
+                            <li class="nav-item"><a href="#" class="nav-link p-2 mx-2 fw-bolder text-white">Home</a></li>
+                            <li  class="nav-item"><a href="#" class="nav-link p-2 mx-2 fw-bolder  text-white">Blog</a></li>
+                            <li  class="nav-item"><a href="#" class="nav-link p-2 mx-2 fw-bolder  text-white">Team</a></li>
+                            <li  class="nav-item"><a href="#" class="nav-link p-2 mx-2 fw-bolder  text-white">Service</a></li>
+                            <li  class="nav-item" ><a href="#" class="nav-link p-2 mx-2 fw-bolder  text-white">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 col-sm-12 d-flex flex-row">
+                    <form action="" class="">
+                        <input type="search" id="inputsz" class="form-control form-control-dark text-bg-white text-secondary mt-2 " placeholder="Search..." >
+                    </form>
+        
+                    <div class=" ">
+                        <button type="button" class="btn btn-outline-light mt-2 ms-2" data-bs-toggle="modal" data-bs-target="#myModal">Login</button>
+                        <button type="button" class="btn btn-secondary mt-2 p-1" data-bs-toggle="modal" data-bs-target="#myModal2">Sign-up</button>
+                    </div>
+                </div>
+            </nav>
+           
+        </div>
+    </div>
+  
+  <br>
+  <br>
+
+
+
+    <div class="container mt-3">
+  
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+        
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+        
+                <!-- Modal body -->
+                <div class="modal-body p-5 pt-0 ">
+                    <form class="">
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Password</label>
+                    </div>
+                    <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Login </button>
+                    <small class="text-body-secondary">By clicking Login, you agree to the terms of use.</small>
+                    <hr class="my-4">
+                    <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+                    <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+                        <svg class="bi me-1" width="16" height="16"><use xlink:href="#twitter"/></svg>
+                        Login with Twitter
+                    </button>
+                    <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+                        <svg class="bi me-1" width="16" height="16"><use xlink:href="#facebook"/></svg>
+                       Login with Facebook
+                    </button>
+                    <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+                        <svg class="bi me-1" width="16" height="16"><use xlink:href="#github"/></svg>
+                        Login with GitHub
+                    </button>
+                    </form>
+                </div>
+        
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+
+
+<br>
+<br>
+
+
+
+    <div class="container mt-3">
+  
+        <!-- The Modal 2-->
+        <div class="modal" id="myModal2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+        
+                <!-- Modal 2 Header -->
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+        
+                <!-- Modal 2 body -->
+                <div class="modal-body p-5 pt-0">
+                    <form class="">
+
+
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control rounded-3" id="fname" placeholder="name@example.com">
+                        <label for="fname">First Name</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control rounded-3" id="lname" placeholder="name@example.com">
+                        <label for="lname">Last Name</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="phone" class="form-control rounded-3" id="phone" placeholder="name@example.com">
+                        <label for="phone">Phone</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Password</label>
+                    </div>
+                    <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
+                    <small class="text-body-secondary">By clicking Sign up, you agree to the terms of use.</small>
+                    <hr class="my-4">
+                    
+                    </form>
+                </div>
+        
+                <!-- Modal 2 footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+
+  
+
+
+
+
+  
+  
+</body>
+</html>

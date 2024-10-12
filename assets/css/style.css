@@ -1,0 +1,12 @@
+.customp li a{
+    font-size:20px;
+}
+
+#inputsz{
+    width:250px;
+    height:auto;
+}
+
+@media only screen and (max-width: 540px) {
+
+}
